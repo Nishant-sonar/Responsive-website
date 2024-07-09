@@ -1,0 +1,304 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #2560ac;
+}
+#main img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#main > i {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  top: 10%;
+}
+#nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  height: 50px;
+  width: 100%;
+}
+#nav1 {
+  position: relative;
+  height: 100%;
+  width: 25%;
+}
+#nav1 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  scale: 1.7;
+}
+#nav2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+#text1 {
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#text2 {
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#text3 {
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#text4 {
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#text1:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+#text2:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+#text3:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+#text4:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+#nav3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+}
+#nav3 > button {
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 9px 22px;
+  background-color: transparent;
+  border-radius: 200px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#nav3 > button:hover {
+  background-color: #fff;
+  border: 3px solid #000;
+  color: #000;
+  scale: 1.2;
+}
+#box {
+  position: relative;
+  top: 55%;
+  left: 28%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 88%;
+  width: 40%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+#box h1 {
+  font-size: 60px;
+  padding-top: 5%;
+}
+#box h4 {
+  font-weight: 400;
+  padding-top: 16px;
+}
+#box h2 {
+  padding-top: 30px;
+}
+#type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px;
+  height: 25%;
+  width: 100%;
+}
+#type1 {
+  height: 100%;
+  width: 32%;
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#type1:hover {
+  scale: 1.1;
+}
+#cl1 {
+  text-align: center;
+  font-size: 12px;
+  height: 75%;
+  width: 100%;
+  background-color: #2b72c2;
+}
+#cl1 h1 {
+  font-size: 35px;
+}
+#cl2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  height: 25%;
+  width: 100%;
+  background-color: #3788de;
+}
+#type2 {
+  height: 100%;
+  width: 32%;
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#type2:hover {
+  scale: 1.1;
+}
+#cl3 {
+  text-align: center;
+  font-size: 12px;
+  height: 75%;
+  width: 100%;
+  background-color: #1e4b93;
+}
+#cl3 h1 {
+  font-size: 35px;
+}
+#cl4 {
+  height: 25%;
+  width: 100%;
+  background-color: #16397b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+#type3 {
+  height: 100%;
+  width: 32%;
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#type3:hover {
+  scale: 1.1;
+}
+#cl5 {
+  text-align: center;
+  font-size: 12px;
+  height: 75%;
+  width: 100%;
+  background-color: #184183;
+}
+#cl5 h1 {
+  font-size: 35px;
+}
+#cl6 {
+  height: 25%;
+  width: 100%;
+  background-color: #2d6dbc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+#box h5 {
+  padding-top: 30px;
+  font-weight: 500;
+}
+#box > button {
+  margin-top: 50px;
+  padding: 10px 62px;
+  border-radius: 200px;
+  background-color: transparent;
+  border: 2.3px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#box > button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  scale: 1.2;
+}
