@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Friendly Resume</title>
+    <style>
+        @media print {
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0 !important;
+                padding: 0;
+                background-color: #ffffff !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 1231px;
+                /* (W/H) Ratio should be 0.7069 */
+            }
+
+            @page {
+                size: 930px 1200px;
+                margin: 0;
+            }
+
+            .resume {
+                width: 900px;
+                background: #ffffff;
+                border-bottom-left-radius: 0px !important;
+                border-bottom-right-radius: 0px !important;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-top: 0;
+            }
+
+            .header {
+                text-align: center;
+                width: auto !important;
+                background: #b6dbf0;
+                padding: 115px 20px 115px 20px;
+                border-top-left-radius: 0px !important;
+                border-top-right-radius: 0px !important;
+                margin-bottom: 0;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 100px 0 20px 0;
+            padding: 0;
+            background-color: #d6cece;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1231px;
+            /* (W/H) Ratio should be 0.7069 */
+        }
+
+        .resume {
+            width: 900px;
+            background: #ffffff;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 0;
+            /* Ensure no space between header and resume */
+        }
+
+        .NoDecorationBlue a {
+            text-decoration: None;
+            color: #0c6291;
+        }
+
+        .TextLight {
+            color: #424242;
+            ;
+            font-weight: 500;
+        }
+
+        .IconLight {
+            color: #4e4e4e;
+        }
+
+        .header {
+            text-align: center;
+            width: 900px;
+            background: #b6dbf0;
+            padding: 115px 20px 115px 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-bottom: 0;
+            /* Remove bottom margin */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 40px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .header h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .section,
+        .SUsection {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #0073b1;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #96a75a;
+            padding-bottom: 5px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mbb-3 {
+            margin-bottom: 0.75rem
+                /* 12px */
+            ;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem
+                /* 8px */
+            ;
+        }
+
+        .content .left {
+            width: 35%;
+            padding-right: 10px;
+            border-right: 4px solid rgb(109, 106, 106);
+            border-radius: 2px;
+        }
+
+        .content .right {
+            width: 60%;
+            margin-left: 10px;
+        }
+
+        .content .left .section-title,
+        .content .right .item-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content .right .item-title {
+            font-weight: bold;
+        }
+
+        .Contact div {
+            margin-bottom: 5px;
+        }
+
+        .content .Contact div a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .subcont,
+        .SkillSubCon {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: square;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .rotate-90 {
+            transform: rotate(90deg);
+            /* Rotates the icon 90 degrees */
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="https://prashantparshuramkar.host20.uk/cv-templates/resume-icon.png">
+</head>
+
+<body>
+    <div class="sc-fLDLck Uyzkz">
+        <div id="capture-content">
+            <div class="header">
+                <h1>Prashant Parshuramkar</h1>
+                <h2>Frontend Developer</h2>
+            </div>
+            <div class="resume">
+                <div class="content">
+                    <div class="left">
+                        <div class="Contact">
+                            <div class="section-title"><b>Contact</b> <i class="fas fa-address-card" aria-hidden="true"></i></div><br>
+                            <div class="Litem"><i class="fa fa-phone IconLight" aria-hidden="true"></i> 9623447749</div>
+                            <div class="Litem"><i class="fas fa-envelope IconLight" aria-hidden="true"></i><a href="mailto:reelsgos@gmail.com"> pprashant0654@gmail.com</a></div>
+                            <div class="Litem"><i class="fab fa-linkedin IconLight" aria-hidden="true"></i><a href="https://www.linkedin.com/in/prashantparshuramkar" target="_blank">  prashantparshuramkar</a></div>
+                            <div class="Litem"><i class="fas fa-globe IconLight" aria-hidden="true"></i><a href="https://github.com/PrashantPKP" target="_blank"> github.com/PrashantPKP</a></div>
+                            <div class="Litem"><i class="fa fa-map-marker IconLight" aria-hidden="true"></i> Nagpur, Maharashtra</div><br>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title"><b>Education</b> <i class="fas fa-graduation-cap" aria-hidden="true"></i></div><br>
+                            <div class="Litem">
+                                <div class="mbb-3">
+                                    <div class="SubSec-title TextLight"><b>2021 - 2025<br>Nagpur University</b></div>Bachelor of Technology<br>CGPA: 8.5
+                                </div>
+                                <div class="mbb-3">
+                                    <div class="SubSec-title TextLight"><b>2020 - 2021<br>Martandrao Patil Kapgate Jr. College</b></div>HSC (Science Stream)<br>Percentage: 84.33%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title"><b>Soft Skills</b> <i class="fa fa-book" aria-hidden="true"></i></div><br>
+                            <ul>
+                                <li>Teamwork</li>
+                                <li>Creativity</li>
+                                <li>Time Management</li>
+                                <li>Problem Solving</li>
+                                <li>Communication</li>
+                                <li>Adaptability</li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title"><b>Languages</b> <i class="fa fa-language" aria-hidden="true"></i></div><br>
+                            <ul>
+                                <li>English: Fluent</li>
+                                <li>Hindi: Fluent</li>
+                                <li>Marathi: Fluent</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="section">
+                            <div class="section-title"><b>Profile Summary</b></div>
+                            <p>A results-driven Frontend Developer from Maharashtra with strong proficiency in HTML, CSS, JavaScript, React.js, Node.js, and design tools like Figma. Delivered 15+ interactive projects including AI dashboards, puzzle solvers, and real-time parcel tracking systems. Excellent in UI/UX, problem-solving, and team collaboration. Constantly upskilling through hands-on learning and real-world deployment.</p>
+                        </div>
+
+                        <div class="SUsection">
+                            <div class="section-title"><b>Projects</b></div>
+                            <ul>
+                                <div class="Ritem">
+                                    <li>
+                                        <div class="item-title TextLight">Brainwave UI Suite</div>
+                                        <div>React, Node.js, Redux, Tailwind, REST API</div>
+                                    </li>
+                                </div>
+                                <div class="Ritem">
+                                    <li>
+                                        <div class="item-title TextLight">N-Queen Puzzle Solver</div>
+                                        <div>JavaScript, Animation, HTML/CSS</div>
+                                    </li>
+                                </div>
+                                <div class="Ritem">
+                                    <li>
+                                        <div class="item-title TextLight">Intelligent Supply Chain Solution</div>
+                                        <div>PHP, SQL, JavaScript, Bootstrap, jQuery</div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title"><b>Work Experience</b></div>
+                            <div class="Ritem">
+                                <ul>
+                                    <li class="mbb-2">
+                                        <div class="item-title TextLight">Frontend Intern - ReacTree Labs<div>Jan 2024 – Apr 2024</div></div>
+                                        Worked on responsive UIs, bug fixing, and improved user interaction using React.js and Figma.
+                                    </li>
+                                    <li class="mbb-2">
+                                        <div class="item-title TextLight">Full Stack Developer - Freelance<div>Aug 2023 – Dec 2023</div></div>
+                                        Built and deployed courier tracking platform using PHP, SQL, and JavaScript; integrated real-time data management.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title"><b>Certifications</b></div>
+                            <div class="Ritem subcont NoDecorationBlue">
+                                <div>Frontend Developer Certification<br>UX Design (Google)<br>GitHub Bootcamp<br>Responsive Web Design<br><a href="#">More Certificates</a></div>
+                                <div>--<br>--<br>--<br>--</div>
+                                <div>freeCodeCamp<br>Coursera<br>GitHub Learn<br>Udemy</div>
+                                <div class="TextLight">(3 Months)<br>(2 Months)<br>(1 Month)<br>(1 Month)</div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="section-title"><b>Technical Skills</b></div>
+                            <div class="Ritem subcont">
+                                <ul>
+                                    <li>HTML/CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>React.js</li>
+                                </ul>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Bootstrap</li>
+                                    <li>Tailwind CSS</li>
+                                </ul>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>MySQL</li>
+                                    <li>REST API</li>
+                                </ul>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Git & GitHub</li>
+                                    <li>VS Code</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

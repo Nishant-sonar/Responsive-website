@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Friendly Resume</title>
+    <style>
+        @media print {
+            body {
+                margin-top: 10px !important;
+                font-family: Arial, sans-serif;
+                background: #E5E7EB !important;
+                color: #333;
+                padding: 20px;
+            }
+
+            @page {
+                size: 930px 1300px;
+                margin: 0;
+            }
+
+            .resume-container {
+                width: 900px;
+                margin: 0 auto;
+                background: #E5E7EB;
+                border: 0px solid #ddd !important;
+                border-radius: 8px;
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0.05) !important;
+                padding: 2rem;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Name {
+            font-family: Verdana;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        body {
+            margin-top: 100px;
+            font-family: Arial, sans-serif;
+            background: #cfcfcf;
+            color: #333;
+            padding: 20px;
+        }
+
+        .resume-container {
+            width: 900px;
+            margin: 0 auto;
+            background: #E5E7EB;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+        }
+
+        .header {
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #666;
+            margin-bottom: 0.75rem;
+        }
+
+        .header p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .summary p {
+            line-height: 1.5;
+            margin: 0 20px 0 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills ul {
+            margin-left: 10px;
+            padding-left: 0;
+        }
+
+        .skills li {
+            margin: 0 20px 0 30px;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item {
+            margin: 0 20px 10px 0;
+        }
+
+        .experience-item h4 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .experience-item span {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .Certificats span {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .experience-item ul {
+            list-style: disc;
+            margin-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+        .experience-item li {
+            margin-bottom: 0.5rem;
+        }
+
+        .education {
+            margin-left: 10px;
+        }
+
+        .education-item {
+            margin: 0 10px 10px 20px;
+        }
+
+        .education-item h4 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .education-item span {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .Projects-items {
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .Projects-items h4 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .Projects-items p {
+            font-size: medium;
+            font-weight: lighter;
+        }
+
+        .Certificats {
+            margin: 10px 20px;
+        }
+
+        .SpaceBetween {
+            display: flex;
+            flex-direction: row;
+            /* Force row direction */
+            justify-content: space-between;
+            font-weight: bolder;
+            color: #525151;
+        }
+
+        .mar-30 {
+            margin: 0 20px 0 20px;
+        }
+
+        .justflex {
+            display: flex;
+            flex-direction: row;
+            /* Force row direction */
+            align-items: center;
+            font-weight: bolder;
+            color: #525151;
+        }
+
+        .fontlight {
+            color: #494848;
+        }
+
+        .fontBold {
+            font-weight: bolder;
+            color: #333;
+        }
+
+        .NoneDecoration {
+            text-decoration: none;
+            color: #2d3499;
+        }
+
+        .Heading {
+            padding: 13px 20px 10px 20px;
+            color: #424141;
+            border-radius: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            background-color: #c5c3c3;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="https://prashantparshuramkar.host20.uk/cv-templates/resume-icon.png">
+</head>
+
+<body>
+    <div class="sc-dVBluf cqCqrZ">
+        <div class="resume-container" id="capture-content">
+            <div class="header">
+                <h1 class="Name">Prashant Parshuramkar</h1>
+                <h2 class="fontBold" style="font-weight: 700;">Frontend Developer</h2>
+                <p style="color: rgb(51, 51, 51);">
+                    <a href="#" class="NoneDecoration">Nagpur (Maharashtra)</a> |
+                    <a class="NoneDecoration" href="mailto:pprashant0654@gmail.com" target="_blank" rel="noreferrer">9623447749</a> |
+                    <a class="NoneDecoration" href="https://www.linkedin.com/in/prashantparshuramkar9623" target="_blank" rel="noreferrer">prashantparshuramkar9623</a> |
+                    <a class="NoneDecoration" href="https://prashant.host20.uk" target="_blank" rel="noreferrer">prashant.host20.uk</a>
+                </p>
+            </div>
+
+            <h3 class="Heading">Summary</h3>
+            <div class="summary">
+                <p>
+                    A passionate Frontend Developer with hands-on experience in React, JavaScript, CSS, and responsive design. Demonstrated ability to create user-friendly and visually appealing web interfaces. Developed and deployed 20+ frontend projects focusing on performance, accessibility, and real-time integration. Enthusiastic about solving UI/UX challenges and building scalable web apps.
+                </p><br>
+            </div>
+
+            <h3 class="Heading">Education</h3>
+            <div class="education">
+                <div class="education-item">
+                    <ul>
+                        <li>
+                            <h4 class="SpaceBetween">Bachelor in Computer Application <span style="margin-right: 6%;">( 2021 - 2025 )</span></h4>
+                        </li>
+                        <p>Nagpur University || CGPA: 8.5</p>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <ul>
+                        <li>
+                            <h4 class="SpaceBetween">Primary/Secondary <span style="margin-right: 6%;">( 2020 - 2021 )</span></h4>
+                        </li>
+                        <p>MPK Jr. College Sakoli || Percentage: 84.33%</p>
+                    </ul>
+                </div><br>
+            </div>
+
+            <h3 class="Heading">Work Experience</h3>
+            <div class="experience">
+                <div class="experience-item">
+                    <ul>
+                        <li class="SpaceBetween">Onlei Tech | Frontend Intern <span>( Dec-2024 to Mar-2025 )</span></li>
+                        Designed interactive frontend modules and worked on UI improvement using React and Bootstrap.
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <ul>
+                        <li class="SpaceBetween">Microsoft | Web Developer Intern <span>( May-2024 to Jul-2024 )</span></li>
+                        Built responsive dashboards and integrated frontend with APIs using React.js and JavaScript.
+                    </ul>
+                </div><br>
+            </div>
+
+            <h3 class="Heading">Projects</h3>
+            <div class="education">
+                <div class="Projects-items">
+                    <ul>
+                        <li>
+                            <h4 class="fontlight">Random Choice Picker</h4>
+                        </li>
+                        <p>JavaScript, HTML, CSS — Interactive tool to select a random choice visually in real-time.</p>
+                    </ul>
+                </div>
+                <div class="Projects-items">
+                    <ul>
+                        <li>
+                            <h4 class="fontlight">Brainwave UI Suite</h4>
+                        </li>
+                        <p>React.js, Redux — Built modern UI components for generative AI platform with clean, responsive design.</p>
+                    </ul>
+                </div>
+                <div class="Projects-items">
+                    <ul>
+                        <li>
+                            <h4 class="fontlight">N-Queen Puzzle Solver</h4>
+                        </li>
+                        <p>JavaScript — Visualization of solving N-Queen problems with adjustable animation speed.</p>
+                    </ul>
+                </div><br>
+            </div>
+
+            <h3 class="Heading">Certifications</h3>
+            <div class="justflex Certificats">
+                <div class="mar-30">React Developer Certificate<br>Responsive Web Design<br>Frontend Development with JavaScript<br>Git & GitHub Basics<br>CSS Mastery<br><a href="#" class="NoneDecoration" target="_blank" rel="noreferrer">More Certificates</a><br><br></div>
+                <div class="mar-30">--<br>--<br>--<br>--<br>--<br><br> <br></div>
+                <div class="mar-30">Meta<br>freeCodeCamp<br>Udemy<br>GitHub<br>Coursera<br><br><br></div>
+                <div class="mar-30"><span>(2 month )</span><br><span>(1 Month)</span><br><span>(2 Month)</span><br><span>(1 Month)</span><br><span>(1 Month)</span><br><br><br></div>
+            </div>
+
+            <h3 class="Heading">Technical Skills</h3>
+            <div class="skills SpaceBetween">
+                <ul>
+                    <li>HTML5/CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                </ul>
+                <ul>
+                    <li>Redux</li>
+                    <li>Bootstrap/Tailwind</li>
+                    <li>Git/GitHub</li>
+                </ul>
+                <ul>
+                    <li>REST APIs</li>
+                    <li>Figma</li>
+                    <li>Node.js (Basics)</li>
+                </ul>
+                <ul>
+                    <li>VS Code</li>
+                    <li>Responsive Design</li>
+                    <li>Debugging Tools</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

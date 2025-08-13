@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Friendly Resume</title>
+    <style>
+        @media print {
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff !important;
+                display: flex;
+                justify-content: center;
+                align-items: stretch !important;
+                height: 100% !important;
+            }
+
+            @page {
+                size: auto 1220px;
+                margin: 0;
+            }
+
+            .resume {
+                width: 900px;
+                background: #ffffff;
+                border: 1px solid #ffffff !important;
+                border-radius: 15px;
+                margin-top: 0px !important;
+                padding: 0 32px 0 0;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d6cece;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1380px;
+            /* (W/H) Ratio should be 0.7069 */
+        }
+
+        .resume {
+            width: 900px;
+            /* (W/H) Ratio should be 0.7069 */
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            margin-top: 100px;
+            padding: 0 30px 0 0;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .Underline {
+            width: 75px;
+            border: 2px solid black;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+
+        .NoneDecoration a {
+            text-decoration: none;
+            color: #0363b1;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .left {
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 13px 10px 13px;
+            background-color: #0363b1;
+            border-top-left-radius: 15px;
+            border-right: 4px solid #0363b1;
+        }
+
+        .left img {
+            width: 200px;
+            height: 200px;
+            background-color: #4c4fda;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .header .right {
+            width: 65%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-right: 40px;
+        }
+
+        .header .right .head {
+            padding-left: 40px;
+        }
+
+        .textGray {
+            color: #4e4e53;
+        }
+
+        .right h1 {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .right h2 {
+            font-size: 16px;
+            color: #4d4b4b;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #3e3e3f;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #96a75a;
+            padding-bottom: 5px;
+        }
+
+        .SkillsSection-title {
+            font-size: 18px;
+            color: #3e3e3f;
+            border-bottom: 1px solid #96a75a;
+        }
+
+        .Lsection-title {
+            font-size: 18px;
+            color: #f5f5f5;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #d4d4d2;
+            padding-bottom: 5px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mtt-3 {
+            margin-top: 0.75rem
+                /* 12px */
+            ;
+        }
+
+        .content .left {
+            width: 35%;
+            padding-right: 10px;
+            background-color: #0363b1;
+            border-bottom-left-radius: 15px;
+            border-right: 4px solid #0363b1;
+            /* border-top: 4px solid #0363b1; */
+        }
+
+        .content .right {
+            width: 65%;
+            margin-left: 10px;
+        }
+
+        .Lsection,
+        .Contact {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            color: #e1ebf3;
+        }
+
+        .Contact div {
+            margin-bottom: 5px;
+        }
+
+        .content .Contact div a {
+            text-decoration: none;
+            color: #e1ebf3;
+        }
+
+        .subcont,
+        .SkillSubCon {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section,
+        .SUsection {
+            margin-bottom: 20px;
+            color: #141414;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .item-title {
+            font-weight: bold;
+        }
+
+        .content .right .item-title,
+        .content .left .section-title,
+        .Lsection-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .textLight {
+            font-weight: 500;
+            color: #626263;
+        }
+
+        .rotate-90 {
+            transform: rotate(90deg);
+        }
+
+        .content .right .section .Cont {
+            border-left: 2px solid #53677a;
+            margin-left: 5px;
+        }
+
+        .content .right .section .Cont .item {
+            margin-left: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="https://prashantparshuramkar.host20.uk/cv-templates/resume-icon.png">
+</head>
+
+<body>
+    <div class="sc-dycHyt fNOEuN">
+        <div class="resume" id="capture-content">
+            <!-- ===================== HEADER ===================== -->
+            <div class="header">
+                <div class="left">
+                    <img src="https://www.skibalawchicago.com/wp-content/uploads/2024/06/profile-placeholder.jpg" alt="Profile">
+                </div>
+                <div class="right">
+                    <div class="head">
+                        <h1>Prashant Parshuramkar</h1>
+                        <h2>Frontend Developer</h2>
+                        <div class="Underline"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===================== MAIN CONTENT ===================== -->
+            <div class="content">
+                <!-- ---------- LEFT COLUMN ---------- -->
+                <div class="left">
+                    <!-- Contact -->
+                    <div class="Contact">
+                        <div class="Lsection-title"><b>Contact</b> <i class="fas fa-address-card" aria-hidden="true"></i></div><br>
+                        <div class="Litem"><i class="fa fa-phone" aria-hidden="true"></i> +91 98765 43210</div>
+                        <div class="Litem"><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:reelsgos@gmail.com"> pprashant0654@gmail.com</a></div>
+                        <div class="Litem"><i class="fab fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/prashant-parshuramkar" target="_blank" rel="noreferrer"> prashant-parshuramkar</a></div>
+                        <div class="Litem"><i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/PrashantPKP" target="_blank" rel="noreferrer"> PrashantPKP</a></div>
+                        <div class="Litem"><i class="fa fa-map-marker" aria-hidden="true"></i>  Nagpur, Maharashtra</div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="Lsection">
+                        <div class="Lsection-title"><b>Education</b> <i class="fas fa-graduation-cap" aria-hidden="true"></i></div><br>
+                        <div class="Litem">
+                            <div class="SubSec-title"><b>2022 – 2025<br>Nagpur University</b></div>
+                            B.Tech. in Computer Engineering<br>CGPA: 8.4/10<br><br>
+                            <div class="SubSec-title"><b>2020 – 2021<br>Martandrao Patil Kapgate Jr. College</b></div>
+                            HSC (Science) – 84.33%<br>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="Lsection">
+                        <div class="Lsection-title"><b>Soft Skills</b> <i class="fa fa-book" aria-hidden="true"></i></div><br>
+                        <ul>
+                            <li>Teamwork & Collaboration</li>
+                            <li>Problem-Solving</li>
+                            <li>Adaptability</li>
+                            <li>Communication</li>
+                            <li>Time Management</li>
+                            <li>Attention to Detail</li>
+                        </ul>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="Lsection">
+                        <div class="Lsection-title"><b>Languages</b> <i class="fa fa-language" aria-hidden="true"></i></div><br>
+                        <ul>
+                            <li>English — Fluent</li>
+                            <li>Hindi — Native</li>
+                            <li>Marathi — Conversational</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ---------- RIGHT COLUMN ---------- -->
+                <div class="right">
+                    <!-- Profile Summary -->
+                    <div class="section">
+                        <div class="section-title"><b>Profile Summary</b></div>
+                        <p>Creative frontend developer with 3+ years of hands-on experience crafting performant, accessible web applications. Proficient in React .js, Redux, TypeScript, and responsive design with a strong eye for UI/UX and a passion for pixel-perfect implementation. Adept at collaborating with cross-functional teams, integrating RESTful APIs, and translating design systems into robust, maintainable code.</p>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="SUsection">
+                        <div class="section-title"><b>Key Projects</b></div>
+                        <ul>
+                            <div class="Ritem" style="margin-bottom:15px;">
+                                <li>
+                                    <div class="item-title textGray">Brainwave UI Suite</div>
+                                    <div>React, Tailwind CSS — Built a component library and marketing site for AI-powered SaaS with dynamic theming and dark-mode support.</div>
+                                </li>
+                            </div>
+                            <div class="Ritem" style="margin-bottom:15px;">
+                                <li>
+                                    <div class="item-title textGray">N-Queen Puzzle Solver</div>
+                                    <div>Vanilla JS, Canvas API — Interactive visualization solving N-Queen problem with adjustable speed controls; 1.5 k+ GitHub stars.</div>
+                                </li>
+                            </div>
+                            <div class="Ritem">
+                                <li>
+                                    <div class="item-title textGray">Animal Rescue System</div>
+                                    <div>React, Node, MongoDB — Progressive Web App enabling citizens to report at-risk animals and visualize high-risk zones.</div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div><br>
+
+                    <!-- Work Experience -->
+                    <div class="section">
+                        <div class="section-title"><b>Experience</b></div>
+                        <div class="Ritem">
+                            <ul>
+                                <li>
+                                    <div class="item-title textGray mtt-3">LeetCode (Remote)<div>May 2025 – Aug 2025</div></div>
+                                    Frontend Engineering Intern<br>
+                                    <div>Implemented performance optimizations that reduced dashboard load time by 28% and migrated legacy CSS to Tailwind.</div>
+                                </li>
+                                <li>
+                                    <div class="item-title textGray mtt-3">Freelance Projects<div>Jan 2023 – Present</div></div>
+                                    Frontend Developer<br>
+                                    <div>Delivered 10+ responsive websites for small businesses using React and Next.js, achieving Lighthouse scores ≥ 95.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Certificates -->
+                    <div class="section">
+                        <div class="section-title"><b>Certificates</b></div>
+                        <div class="Ritem subcont NoneDecoration">
+                            <div>UX Design Foundations<br>React Advanced Nanodegree<br>JavaScript Algorithms</div>
+                            <div>--<br>--<br>--</div>
+                            <div>Google Coursera<br>Udacity<br>freeCodeCamp</div>
+                            <div class="textLight">(2024)<br>(2023)<br>(2022)</div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills -->
+                    <div class="skills">
+                        <div class="SkillsSection-title"><b>Technical Skills</b></div><br>
+                        <div class="Ritem subcont">
+                            <ul>
+                                <li>HTML 5 / CSS 3</li>
+                                <li>Sass & Tailwind</li>
+                                <li>JavaScript (ES6+)</li>
+                            </ul>
+                            <ul>
+                                <li>React & Redux</li>
+                                <li>TypeScript</li>
+                                <li>Next.js</li>
+                            </ul>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>REST & GraphQL</li>
+                                <li>Git & GitHub</li>
+                            </ul>
+                            <ul>
+                                <li>Figma & Adobe XD</li>
+                                <li>Testing (Jest)</li>
+                                <li>CI/CD (GitHub Actions)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+</html>
